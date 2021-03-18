@@ -17,5 +17,5 @@ code {
 
 @font-face {
   font-family: 'TT Norms';
-  src: local('TT Norms'), url(../../carrot-web/src/Assets/styles/font/TT\ Norms\ sv/TTNorms-Regular.otf) format('truetype')
+  src: local('TT Norms'), url(../src/Assets/styles/font/TT\ Norms\ sv/TTNorms-Regular.otf) format('truetype')
 }
