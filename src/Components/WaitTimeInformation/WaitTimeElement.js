@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme, {deviceQuery} from '../../Assets/styles/font/themes'
+import theme from '../../Assets/styles/font/themes'
 
 export const Container = styled.div`
     width: 520px;

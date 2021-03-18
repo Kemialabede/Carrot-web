@@ -4,7 +4,6 @@ import Speed from '../../Assets/Icons/speed.svg'
 import Interface from '../../Assets/Icons/interface.svg'
 import Flexible from '../../Assets/Icons/flexible.svg';
 import Security from '../../Assets/Icons/security.svg';
-import { IoIosArrowDown } from "react-icons/io";
 import { ScrollTo } from "react-scroll-to";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
