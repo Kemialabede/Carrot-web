@@ -1,5 +1,6 @@
 import BaseButton from './BaseButton'
 import styled from 'styled-components';
+import { deviceQuery } from '../../../Assets/styles/font/themes'
 
 const SecondaryButton = styled(BaseButton).attrs(props => ({
     fill: props.fill || 'auto'
@@ -17,6 +18,9 @@ const SecondaryButton = styled(BaseButton).attrs(props => ({
     font-family: TT Norms;
     margin-bottom: ${props => props.bottom};
     font-size: 14px;
+    @media ${deviceQuery.tablet} {
+        width: 83%;
+    }
 
 `
 

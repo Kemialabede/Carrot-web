@@ -130,6 +130,7 @@ export const AboutDropDown = styled.div`
 export const Drop = styled.div`
     display: none;
     @media ${deviceQuery.tablet} {
+        display: block;
      margin: auto;
      margin-top: -41px;
      p{
