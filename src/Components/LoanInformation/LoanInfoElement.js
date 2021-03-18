@@ -83,7 +83,6 @@ export const Content = styled.p`
     line-height: 29px;
     letter-spacing: -0.02em;
     
-    
     @media (max-width: 978px) {
         text-align: center;
         margin: auto;
