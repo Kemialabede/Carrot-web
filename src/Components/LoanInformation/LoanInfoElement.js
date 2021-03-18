@@ -52,11 +52,16 @@ export const Header = styled.div`
     @media (max-width: 978px) {
         display: block;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 0px;
         margin-bottom: 6px;
+        font-size 22px;
+        font-weight: 400px !important;
         img{
             margin-bottom: 12px;
             margin-right: 0px;
+        }
+        h5{
+            margin: 10px;
         }
     }
 `
@@ -64,14 +69,23 @@ export const Header = styled.div`
 export const Group = styled.div`
     width: 350px;
     margin-left: 25px;
+    
     h5{
-        font-family: TT Norms;
+        margin: 0px;
         font-size: 24px;
-        font-style: normal;
         font-weight: 400;
-        line-height: 26px;
-        letter-spacing: -0.02em;
-        margin: 0; 
+        line-height: 25.8px;
+    }
+    @media (max-width: 978px) {
+        h5{
+            font-family: TT Norms;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: -0.02em;
+            
+        }
     }
 `
 
@@ -97,7 +111,10 @@ export const ServiceContainer = styled.div`
 `
 
 export const Container = styled.div`
-    margin: 83px 30px 70px 276px;
+    margin: 83px 30px 70px 220px;
+    @media (max-width: 978px) {
+        margin: 36px 30px 70px 276px;
+    }
 `
 
 export const ServiceGroup = styled.div`
@@ -114,5 +131,6 @@ export const MobileServiceGroup = styled.div`
     @media (max-width: 978px){
         display: block;
         margin: auto;
+        max-width: 534px;
     }
 `

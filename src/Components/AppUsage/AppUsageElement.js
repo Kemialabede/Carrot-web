@@ -28,6 +28,7 @@ export const Caption = styled.p`
         width: auto;
         padding: 0 24px;
         text-align: center;
+        max-width: 534px;
     }
 `
 
@@ -74,7 +75,7 @@ export const ListItem = styled.p`
 export const Container = styled.div`
     display: flex;
     align-items: center;
-    margin-top: -42px;
+    margin-top: 18px;
     margin-left: 150px;
    left: 30px;
 

@@ -3,7 +3,11 @@ import { LoanInfoHeader, Caption, InfoContainer, Header, Content, ServiceGroup, 
 import Speed from '../../Assets/Icons/speed.svg'
 import Interface from '../../Assets/Icons/interface.svg'
 import Flexible from '../../Assets/Icons/flexible.svg';
-import Security from '../../Assets/Icons/security.svg'
+import Security from '../../Assets/Icons/security.svg';
+import { IoIosArrowDown } from "react-icons/io";
+import { ScrollTo } from "react-scroll-to";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
 const Services = ({image, title, caption}) => {
     return(
@@ -42,7 +46,7 @@ const LoanInfo = () => {
             <Container>
                 <ServiceGroup>
                     <Services image={Flexible} title="Flexible repayment options" caption="Carrot repayment was designed with simplicity in mind. We offer flexible terms and multiple repayment methods. Our customers also choose to repay in installments or at once."/>
-                    <Services image={Speed} title="Speed" caption="The process of  linking your external account to receiving funds on Carrot is less than 5 minutes. We know that this is important to our customers and we are committed to improving this wherever we can."/>
+                    <Services image={Speed} title="Speed" caption="The process of linking your external account to receiving funds on Carrot is less than 5 minutes. We know that this is important to our customers and we are committed to improving this wherever we can."/>
                 </ServiceGroup>
                     <ServiceGroup>
                         <Services image={Security} title="Security" caption="Making sure your funds and personal information are secure on Carrot is our top priority. We constantly iterate on our technology stack to keep up with industry trends in this regard."/>
@@ -50,7 +54,53 @@ const LoanInfo = () => {
                 </ServiceGroup>
             </Container>
             <MobileServiceGroup>
-                <MobileServices image={Speed} title="Flexible repayment options" caption="Carrot repayment was designed with simplicity in mind. We offer flexible terms and multiple repayment methods. Our customers also choose to repay in installments or at once."/>
+                <Slide>
+                    <div>
+                    <MobileServices image={Flexible} title="Flexible repayment options" caption="Carrot repayment was designed with simplicity in mind. We offer flexible terms and multiple repayment methods. Our customers also choose to repay in installments or at once."/>
+                    <ScrollTo>
+              {({ scroll }) => (
+                <div
+                  onClick={() => scroll({ x: 20, y: 705, smooth: true })}
+                >
+                </div>
+              )}
+            </ScrollTo>
+            </div>
+            <div>
+            <MobileServices image={Speed} title="Speed" caption="The process of linking your external account to receiving funds on Carrot is less than 5 minutes. We know that this is important to our customers and we are committed to improving this wherever we can."/>
+                    <ScrollTo>
+              {({ scroll }) => (
+                <div
+                  onClick={() => scroll({ x: 20, y: 705, smooth: true })}
+                >
+                </div>
+              )}
+            </ScrollTo>
+            </div>
+            <div>
+            <MobileServices image={Security} title="Security" caption="Making sure your funds and personal information are secure on Carrot is our top priority. We constantly iterate on our technology stack to keep up with industry trends in this regard."/>
+                    <ScrollTo>
+              {({ scroll }) => (
+                <div
+                  onClick={() => scroll({ x: 20, y: 705, smooth: true })}
+                >
+                </div>
+              )}
+            </ScrollTo>
+            </div>
+            <div>
+            <MobileServices image={Interface} title="Interface" caption="Our easy to use, minimalistic designs were created to provide clarity for our customers. Ensuring customers have a seamless experience is our goal."/>
+                    <ScrollTo>
+              {({ scroll }) => (
+                <div
+                  onClick={() => scroll({ x: 20, y: 705, smooth: true })}
+                >
+                </div>
+              )}
+            </ScrollTo>
+            </div>
+                </Slide>
+               
             </MobileServiceGroup>
         </>
     )

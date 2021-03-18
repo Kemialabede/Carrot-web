@@ -4,8 +4,8 @@ import theme, {deviceQuery} from '../../Assets/styles/font/themes'
 export const Container = styled.div`
     width: 520px;
     background: ${theme.colors.pink};
-    padding: 83px 33px 90px 150px;
-    @media ${deviceQuery.tablet} {
+    padding: 83px 33px 90px 130px;
+    @media (max-width: 978px) {
         width: unset;
         margin: auto;
         padding: 50px 33px 40px 33px;
@@ -21,7 +21,7 @@ export const TimeHeader = styled.h5`
     width: 312px;
     margin: 0;
     margin-bottom: 34px;
-    @media ${deviceQuery.tablet} {
+    @media (max-width: 978px) {
         width: 95%;
         margin: auto;
         text-align: center;
@@ -37,11 +37,12 @@ export const TimeCaption = styled.p`
     width: 512px;
     font-family: TT Norms;
     line-height: 31.73px;
-    @media ${deviceQuery.tablet} {
+    @media (max-width: 978px) {
        text-align: center;
        margin: auto;
        margin-bottom: 35px;
        width: unset;
+       max-width: 534px;
     }
 `
 export const TimeContent = styled.div`
@@ -52,7 +53,7 @@ export const TimeContent = styled.div`
     img{
         height: 100%;
     }
-    @media ${deviceQuery.tablet} {
+    @media (max-width: 978px) {
         display: block;
         width: 100%;
         img{

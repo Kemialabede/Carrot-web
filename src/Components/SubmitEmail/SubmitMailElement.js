@@ -21,6 +21,7 @@ export const MailContainer = styled.div`
     }
     p{
         width: 543px;
+        max-width: 582px;
         text-align: center;
         margin: 19px auto;
         font-family: TT Norms;

@@ -128,11 +128,14 @@ export const AboutDropDown = styled.div`
      } 
 `
 export const Drop = styled.div`
+    display: none;
+    @media ${deviceQuery.tablet} {
      margin: auto;
      margin-top: -41px;
      p{
          cursor: pointer;
      }
+    }
 `
 export const ToggleIcon = styled.div`
      cursor: pointer;

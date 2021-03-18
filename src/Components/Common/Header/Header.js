@@ -44,7 +44,7 @@ const Header = () => {
             <MobileContainer>
                 <HeaderLeft>
                     <Icon src={ MobileHeaderIcon } alt="header-icon" />
-                    <Logo src={HeaderLogo} alt="header-logo" />
+                    <NavLink to='/'><Logo src={HeaderLogo} alt="header-logo" /></NavLink>
                 </HeaderLeft>
                 <HeaderRight onClick={handleChange}>
                     <Icon src={MenuIcon} />
@@ -52,7 +52,7 @@ const Header = () => {
             </MobileContainer>
             {set && <DropDown className="animate__animated animate__slideInDown animate__delay-50s">
                 <DropDownHeader>
-                    <DropDownLogo src={DropLogo} alt="dropdown-logo" />
+                    <NavLink to='/'><DropDownLogo src={DropLogo} alt="dropdown-logo" /></NavLink>
                     <DropDownLogo src={Close} onClick={handleClose} />
                 </DropDownHeader>
                 <NavLink to='/faqs'><Faqs>FAQs</Faqs></NavLink>
