@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import '../../../Carrot/carrot-web/src/Assets/styles/font/TT Norms sv/TTNorms-Black.otf'
+import '../src/Assets/styles/font/TT Norms sv/TTNorms-Black.otf';
 
 ReactDOM.render(
   <React.StrictMode>
