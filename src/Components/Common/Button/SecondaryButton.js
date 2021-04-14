@@ -19,7 +19,7 @@ const SecondaryButton = styled(BaseButton).attrs(props => ({
     margin-bottom: ${props => props.bottom};
     font-size: 14px;
     @media ${deviceQuery.tablet} {
-        width: 83%;
+        width: 30%;
     }
 
 `
